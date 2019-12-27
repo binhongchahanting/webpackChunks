@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <script>
+    var num = "<%= htmlWebpackPlugin.options.title %>"
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h3>webpack 配置</h3>
+  </div>
+  <div id="root"></div>
+  <div>
+    <pre id="show">
+      <%= JSON.stringify(htmlWebpackPlugin, null, "\t") %>
+    </pre>
+  </div>
+</body>
+
+</html>
